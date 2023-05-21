@@ -1,33 +1,3 @@
-"""
-modulator
-=========
-
-The `modulator` module provides functionality for creating a Python project structure with namespaces,
-modules, submodules, classes, functions, and class methods, all organized according to the user's specifications.
-
-This is a part of the PHOTON platform and aims to streamline the process of setting up and managing Python
-projects, following standardized patterns and practices. It generates code for these elements from Jinja templates,
-allowing for easy customization of the output.
-
-Functions included:
--------------------
-- create_namespace: Sets up a namespace directory under 'src', named according to user input.
-- create_module: Sets up a new module under a given namespace with necessary files like '__init__.py', '__main__.py',
-  'app.py' and '{module_name}.py'.
-- create_class: Generates a new class in the specified module.
-- create_submodule: Sets up a new submodule under a given module with '__init__.py' and '{submodule_name}.py' files.
-- create_module_function: Adds a new function to the existing '{module_name}.py' file in a module.
-- create_class_method: Adds a new method to the existing '{class_name}.py' file in a module.
-
-PHOTON platform
----------------
-Author: phiarchitect
-Maintainer: PHOTON platform
-Email: github@phiarchitect.com
-Version: 0.1.0
-Licence: MIT
-"""
-
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
