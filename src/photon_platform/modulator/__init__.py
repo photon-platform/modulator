@@ -9,6 +9,8 @@ tools for creating python modules and their components
 
 """
 
+from .modulator import *
+
 __author__ = "phiarchitect"
 __maintainer__ = "PHOTON platform"
 __email__ = "github@phiarchitect.com"

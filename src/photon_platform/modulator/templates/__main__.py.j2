@@ -1,24 +1,6 @@
-"""
-logger run script
-"""
+"""The package entry point into the application."""
 
-from .logger import Logger
-
-import subprocess
-
-
-def main():
-    """TODO: Docstring for main.
-    :returns: TODO
-
-    """
-    app = Logger()
-    reply = app.run()
-    print(reply)
-
-    if reply:
-        subprocess.run(["vim", reply])
-
+from .app import run
 
 if __name__ == "__main__":
-    main()
+    run()
